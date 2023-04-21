@@ -1,0 +1,35 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #7
+Full Name  : Vishwam Shailesh Kapadia	
+Student ID#: 154933212
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1.)When it comes to declare and initialize ample of variables at the same time, the only thing we could think of is array. As array helps us by storing all the data in a single variable of type array but what if we want to store data of variables whose data types are different, because array can store data of only a specific primitive data type where all the data should be of same type. Therefore, structures are used in such places which allows user to create a user-defined data type which can store data for variables regardless of its data type. Talking about workshop 7, it included many things about a single player such as his/her name, his/her lives, total treasures found by him/her, and history of his/her moves, which are definitely of different data types. So, we just created a structure named PlayerInfo where we stored all the necessary data for a player. To cite an example, I’ll provide you my structure initialization from workshop 07 about PlayerInfo.
+Example: - 
+	struct PlayerInfo
+{
+  	  int lives;
+  	  char playername;
+    	  int treasuresfound;
+  int history[MAX_PATH_LENGTH];
+}
+
+Hence, we can easily store details about different players with the help of this struct which will save our time as well as efforts.
+
+ 
+2.)Firstly, to keep a history of games we can define a counter variable named gamesPlayed which will be 0 at the initial phase and we will keep an increment to that variable every time the game ends, which will at the end keep a record of number of games played by the user. Moreover, we will create another structure of gameInfo which will store the information for all the games played including the endgame. In short, creating one more struct will act as a helping hand and would solve the problem so given.
+
+
+3.)According to me, workshop 07 part 02 was the trickiest program I have ever came across among all the other workshops in the past as it included lot of tricky parts as well as it was tough for me to solve. Firstly, the part where we were supposed to print the initial display of the game status given at the last of this answer was a brainstorming part for me to solve as I was very confused how would I make a loop which will make an initial display too as well as change its properties as the user enters his/her moves. I thought I can just print the initial display of game status but then it would be simply hard-coded, after almost half and hour of thinking and performing trial and errors I came across a solution which worked for the initial phase as well as after moves phase. Though, it was an easy solution as we just needed to check if there is any history of moves played and if not we just showed the symbol of “undiscovered” which was “-“. This took me so long as it was a really confusing part, at least for me. 
+-------------------- 
+|||||||||1|||||||||2  
+12345678901234567890
+	
+
+

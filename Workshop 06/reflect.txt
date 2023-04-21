@@ -1,0 +1,62 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #6
+Full Name  : Vishwam Shailesh Kapadia
+Student ID#: 154933212
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1.) Firstly, arrays provide us the assist required when there are too many variables of a single type to be taken care of throughout the program. One of such arrays is parallel array which help us keep the data in a well-mannered group. Talking about my program I was asked to give a wish list estimate/forecast to a user on his/her inputs. There can be up to 10 wish items and also their prices as well as financing options, so it will be hard to do that without the use of an array. The ‘key’ to accomplish the linking of data in the dataset requires an iterating variable “I” which iterates till the number of wish items of a particular user and on each stage, it keeps storing the essential details of all the sub-details of that item. To cite an example from my program I ran the loop somewhat like this: -
+
+for (i = 0;i < nwishItems;i++)
+   {
+
+       printf("\nItem-%d Details:\n", i + 1);
+       do
+       {
+            flag = 0;
+            printf("   Item cost: $");
+            scanf("%lf", &cost[i]);
+
+            if (cost[i] < minCost)
+            {
+                printf("      ERROR: Cost must be at least $%.2lf\n", minCost);
+            }
+            else
+            {
+                flag = 1;
+            }
+        } while (flag == 0); //It still continues after this...
+
+In the above part of program, I first started a for loop of “i” till the number of wish items and then I started storing the sub-details of the all the items, as in the above case I asked for the cost of the item and stored it in “cost[i]” so at each stage of “i" it stores the value given. This is how arrays help us group related data.
+
+2.) Arrays have multiple storage in it, so it has assigned index numbers to itself which starts from 0 and not 1. So, in order to store the data in arrays we start the loops from 0 to ensure that we store our data from the very start of the array. If we start the array from 1, we are missing the first index position of array and keeping it empty. For example, you can go through this again: -
+
+for (i = 0;i < nwishItems;i++)
+ 	 {
+
+      		 printf("\nItem-%d Details:\n", i + 1);
+       	do
+       	{
+         		 flag = 0;
+          		printf("   Item cost: $");
+            		scanf("%lf", &cost[i]);
+
+            		if (cost[i] < minCost)
+            		{
+                		printf("      ERROR: Cost must be at least $%.2lf\n", minCost);
+            		}
+            		else
+           	      {
+                		flag = 1;
+            		}
+
+        } while (flag == 0); //It still continues after this...
+
+Here, the “for-loop” is the main loop which will help us assign values to the storage of array. Hence, I started the for loop from 0 to ensure that I start storing the data from the first index position itself which is 0th position. So the cost of the very first item of user's wish list will get stored in the 0th index number of the array cost[]. Hence, at the end the cost[] array will have all the cost values of wish lish items stored in it. Also, when we print the data of array we will start the loop from 0 again so we make sure that everything gets printed.
+
+3.) An array is basically a storage of different items at a single place. To give an example, we have 4 brothers in a single house, and they all have their own different clothes. So, their parents gave them a vertical shelf which have 4 sections in one-below-one pattern. Also, it had big numbers printed “1”, “2”, “3”, “4” in the individual section. Brother 1 will keep his clothes in section 1 and so on. So, it would be easy to either remove or keep his clothes in his own section. Basically, they all can store their clothes in a single shelf. Array is just like that, where we store multiple data in a single array which have multiple shelf-life section which is known as “index position” in it. 

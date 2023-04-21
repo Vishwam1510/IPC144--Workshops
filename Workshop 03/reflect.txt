@@ -1,0 +1,39 @@
+*****************************************************************************
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Vishwam Shailesh Kapadia
+Student ID#: 154933212
+Email      : vkapadia3@myseneca.ca
+Section    : NAA
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1.) The main reason of such a problem is the approximation value of 10.12 is hard to achieve as double and float have 8 and 4 bytes respectively which can store upto 64 bits and 32 bits so on piling up the decimal digits it will get accumulated and get weird.9999999 as an answer. In case of 10.10 and 10.15 the approximation is easy and doable whereas 10.12 gets stuck from being rounded up. Since the value of cents2 will end up having more decimals, hence the displaying of such large number would not be proper.
+
+2.)
+
+subTotal = subTotal * 100;
+toonies = (int)subTotal / 5000;
+subTotal = (int)subTotal % 5000;
+loonies = (int)subTotal / 2000;
+subTotal = (int)subTotal % 2000;
+
+The above four lines were taken from my program.The reason of dividing it by 5000 and 2000 was it was multiplied by 100 in begginning with the subtotal value so in order to balance the other side it need to be divided by a "thousand" value.
+
+3.) a.)My cents were stored in different variables lets take one of them as an example:-
+So keeping the question in mind we store 7245 cents to centsSmall, so therefore 
+centsSmall=7245
+double priceSmall= centsSmall/100 // This will store the value as $72.45
+b.)Other way:-
+centsSmall=7245
+double priceSmall= centsSmall*0.01 // This will store the value as $72.45
+c.)centsSmall=7245
+priceSmall= (double)centsSmall/100.0;
+
+
+ 
+

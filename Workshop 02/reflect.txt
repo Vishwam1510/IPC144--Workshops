@@ -1,0 +1,34 @@
+*****************************************************************************
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Vishwam Shailesh Kapadia
+Student ID#: 154933212
+Email      : vkapadia3@myseneca.ca
+Section    : NAA
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1. The part 2 of workshop consisted so many tricky expressions but according to me it wasn't so difficult to code as I have already dealt with Java programs in my past which included playing with relational, logical and arithmetic operations. Anyway, the part i found a little difficult was the part where you need to compare the preference of coffee with the original product.
+For example, to compare the preference of coffee strength and coffee type I used the expression :- 
+(cs == 'r' || cs == 'R') && (c1t1 == 'b' || c1t1 == 'B')
+This was the part where you have to include both the type of inputs, so it needed a little digging in comparing both the things, where you first check the latest input given and with that you also compare it with the past input used for the product in accordance to the preference listed in the mapping provided in instructions pdf.
+
+2. The line which can be written in two ways yielding the same output was just provided by me in the above question which is  (cs == 'r' || cs == 'R') && (c1t1 == 'b' || c1t1 == 'B') . Whereas I could have also written it as (cs == 'r' && c1t1 =='b' || cs == 'r' && c1t1 =='B' || cs == 'R' && c1t1 =='b' || cs == 'R' && c1t1 =='B') which would have given me the same output but the way I have written saves time as well as apply De Morgan's law which also costs us providing less arguments.
+
+3. The main reason for asking us to store the average in part 1 as variable was the prices which were to be taken average of were already initialized by us in the program whereas the conversion and displaying of Celsius to Farenheit was to be done on the basis of input by the user that too the user will type 3 different types of input which could have involved the changing of the value of that variable(if initialized) three times, so in order to not to do so we just made a short in-line calculation for it every time the user inputs the value.
+
+
+
+
+
+
+
+
+
+
+
+

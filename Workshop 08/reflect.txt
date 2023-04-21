@@ -1,0 +1,66 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #8
+Full Name  : Vishwam Kapadia
+Student ID#: 154933212
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1. Reportdata 
+	1)->Space allocated to integer type is 4 bytes and to double type is 8 bytes. Therefore, in ReportData structure there are three int type variables which will occupy 12 bytes. Furthermore, there are 6 double type variables which occupy 48 bytes memory.
+	  ->Therfore, the total minimum memory assigned to ReportData will be 60 bytes.
+	  ->struct ReportData
+		{
+    		int repSkuNumber;
+    		double repPrice;
+    		int repCalorie;
+    		double pounds;
+    		double kilograms;
+    		int grams;
+    		double totalServings;
+    		double costPerServing;
+    		double costCalories;
+		};
+We could improve passing of information to funtions by simply passing object by address which will acquire only 4 bytes of memory itself.
+This will directly change the value in the structure and will not require excess address spcae for new copy.
+This type of passing is done by using pointers to direct the alternate value in function to the location of value of originally declared variable.
+For example : ( usage of it in displayReportData)
+void displayReportData(const struct ReportData reportInfo, const int checkProduct)
+{
+	 printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", reportInfo.repSkuNumber, reportInfo.repPrice, reportInfo.pounds, reportInfo.kilograms,
+        reportInfo.grams, reportInfo.repCalorie, reportInfo.totalServings, reportInfo.costPerServing, reportInfo.costCalories);
+}
+
+2. We can simply direct the ouput in ReportData structure to CatInfo structure.
+This can be done by using pointer to direct value to one variable location instead of assigning two different spaces for it.
+to cite an example from my code, my structre is something like this:-
+
+struct CatFoodInfo
+{
+    int skuNumber;
+    double price;
+    int calorie;
+    double weight;
+};
+
+struct ReportData
+{
+    	int repSkuNumber;
+    	double repPrice;
+ 	int repCalorie;
+    	double pounds;
+   	double kilograms;
+    	int grams;
+    	double totalServings;
+    	double costPerServing;
+    	double costCalories;
+};
+void displayReportData(const struct ReportData reportInfo, const int checkProduct)
+{
+	 printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", reportInfo.repSkuNumber, reportInfo.repPrice, reportInfo.pounds, reportInfo.kilograms,
+        reportInfo.grams, reportInfo.repCalorie, reportInfo.totalServings, reportInfo.costPerServing, reportInfo.costCalories);
+}

@@ -1,0 +1,32 @@
+*****************************************************************************
+                              Reflection
+                             Workshop - #1
+Full Name  : Vishwam Shailesh Kapadia
+Student ID#: 154933212
+Email      : vkapadia3@myseneca.ca
+Section    : NAA
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+Answers
+1. I have learned many things like, creating visual studio project, printing
+   sentences properly, printing special characters like ", %, \. I have also 
+   learned how to give spaces by putting \t command as well as how to go into
+   next line by typing just \n command.Moreover I learned how to use Matrix 
+   and WinSCP, how to submit files to professor and even how to make new 
+   directories in the matrix.
+
+2. SSH(PuTTy) is like a terminal which gives us access to our college server through
+   matrix and I used it for the same reason, to access the matrix by joining
+   the matrix.senecacollege.ca server from SSH. It is a very secure terminal
+   and asks for id password everytime you try to access it.
+
+3. SFTP(WinSCP) is like a workshop place where we manage our workshop files and
+   store our written projects there and the files stored there is directly 
+   accessible in the matrix. I used it to store my written program and also copy
+   program in the matrix.
+
+

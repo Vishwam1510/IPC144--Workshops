@@ -1,0 +1,48 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #5
+Full Name  : Vishwam Shailesh Kapadia
+Student ID#: 154933212
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1.) The two possible selection constructs are if-else and switch case construct. Lets consider doing it by if-else first. The input value of month was stored in "month" integer in my program so if I have used if-else construct it would have looked like this for storing the first three characters of the last two month:-
+
+a.)
+if(month==11)
+{
+	printf("%d-NOV-01\n", year); /* The "year" is the integer where the year input by the user is stored*/
+}
+else if(month==12)
+{
+	printf("%d-DEC-01\n", year);
+}
+
+b.)Using switch case method:
+switch(month)
+{
+    case 11:
+	{
+           printf("%d-NOV-01\n", year);
+           break;
+        }
+    case 12:
+	{
+           printf("%d-DEC-01\n", year);
+           break;
+        }
+}
+
+2.) The three types of iteration constructs are "for" loops, "while" loops and "do-while" loops. The one I used to validate the user input was "for" loop as well as a do-while loop. Talking about the "for" loop first, I used "for" loop to validate the month input by user. Moreover I nested a "do-while" loop inside the same "for" loop as we were required to take input of morning rating and evening rating for 3 Log Days. Hence, I set the "for" loop till Log Days and validate the months inside it as well as asked the user about morning rating and evening rating inside a 'do-while" loop nested in the same "for" loop. The "do-while" loop was iniated for taking user input multiple times in case if the user enters an incorrect value, so we need to print the input part before checking condition and that is why do-while loop was used as it executes the statement first and then checks the condition. On the other hand the "for" loop was used for the month validation, as during that process we will check the conditions first and then execute the logic and assign the month name values and count the ratings of morning and evening according to the user input.
+ 
+3.) There are many techniques available to test and debug a particular program, one method includes printf technique where we use printf at various places to find out the rough values of the variables or at the particular moment and the othe rone is the debugger method. I use the printf method more as it is convenient to me and help me find out my mistake step wise, I can keep track of output and see where the output is going wrong.
+
+SEMANTIC PROBLEM
+   A semantic error is any logical error in the coding that a user does.I didn't face any semantic error while programming but I did face a syntactic problem.
+
+SYNTACTIC PROBLEM
+   A syntactic error is a mistake while writing the pre-defined syntax of iterations or any part of the coding. For a syntactic error, I forgot to write a break statement in switch case and what happened was the particualr case when executed and found true it didn't break the execution and come out instead it printed all the outputs of the below case as there was no break in the above case. Moreover I forgot to write "/n" in one part where we need to print the iniative part of output so the output didn't go in the other line but printed the output in the same line. Other than this I didn't face any syntactic errors.
